@@ -43,3 +43,32 @@ public class library extends JFrame {
             }
         });
     }
+
+   /**
+     * Create the frame.
+     */
+    public library() {
+        libraryList = new ArrayList<>(); // Initialize the ArrayList
+
+        setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        setBounds(100, 100, 700, 525);
+        contentPane = new JPanel();
+        contentPane.setBackground(new Color(219, 236, 223));
+        contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
+
+        setContentPane(contentPane);
+        contentPane.setLayout(null);
+        
+        //Abigail Lapuz - start
+        txtAddElement = new JTextField();
+        txtAddElement.setToolTipText("");
+        txtAddElement.setBounds(41, 105, 167, 25);
+        contentPane.add(txtAddElement);
+        txtAddElement.setColumns(10);
+
+        JLabel lblNewLabel = new JLabel("ADD ELEMENT");
+        lblNewLabel.setForeground(new Color(79, 117, 94));
+        lblNewLabel.setFont(new Font("Franklin Gothic Book", Font.BOLD, 15));
+        lblNewLabel.setBounds(41, 82, 167, 27);
+        contentPane.add(lblNewLabel);
+        //Abigail Lapuz - end
